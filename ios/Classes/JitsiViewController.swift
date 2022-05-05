@@ -68,7 +68,7 @@ class JitsiViewController: UIViewController {
             builder.token = self.token
             builder.userInfo = self.jistiMeetUserInfo
 
-            builder.setSubject(self.subject);
+            builder.setSubject(self.subject ?? "");
             builder.setAudioOnly(self.audioOnly ?? false);
             builder.setAudioMuted(self.audioMuted ?? false);
             builder.setVideoMuted(self.videoMuted ?? false);
